@@ -39,6 +39,7 @@
 - **While:** `while [ condicion ]; do ... done`
 - **Case:** `case variable in valor1) ... ;; valor2) ... ;; esac`
 - **Dar permiso de ejecución:** `chmod +x script.sh`
+- **Listar archivos ocultos:** `ls -la`
 ---
 
 ### ¿Qué es un script?
