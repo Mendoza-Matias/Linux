@@ -68,7 +68,6 @@ Es una etiqueta que se le asigna a un conjunto de usuarios para facilitar la adm
 - **-g:** especifica el grupo principal del usuario
 - **-G:** especifica grupos adicionales a los que pertenece el usuario
 - **Dar permisos de super usuario a un usuario:** `usermod -G sudo <nombre_usuario>`
-- **-G:** especifica grupos adicionales a los que pertenece el usuario
 - **sudo:** grupo de super usuarios
 
 ### Permisos de archivos y carpetas
