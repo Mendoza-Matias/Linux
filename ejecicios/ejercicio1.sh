@@ -8,10 +8,10 @@ read -p "Ingresa el nombre del nuevo grupo: " group
 DATE=$(date '+%Y-%m-%d %H:%M:%S')
 
 # Verificar si el usuario ya existe
-if [ $(grep -c "^$user:" /etc/passwd) -eq 0 ]; then
+if [ $(grep -c $user /etc/passwd) -eq 0 ]; then
 
     # Verificar si el grupo ya existe
-    if [ $(grep -c "^$group:" /etc/group) -eq 0 ]; then
+    if [ $(grep -c $group /etc/group) -eq 0 ]; then
 
         # Crear grupo y usuario
         sudo groupadd "$group"
