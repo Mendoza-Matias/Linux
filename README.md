@@ -90,3 +90,12 @@ Es una etiqueta que se le asigna a un conjunto de usuarios para facilitar la adm
 - **Todos los permisos:** `7` (4+2+1)
 - **Lectura y escritura:** `6` (4+2)
 - **Lectura y ejecución:** `5` (4+1)
+
+---
+# CRON
+- **Ingresar al cron para un usuario:** `crontab -e`
+- **Ver qué tareas están en el cron:** `crontab -l`
+- **Borrar todas las tareas del cron:** `crontab -r`
+- **Borrar cron con confirmación:** `crontab -i -r`
+- **Editar el cron de otro usuario (como root):** `sudo crontab -e -u nombre_usuario`
+- **Ver el cron de otro usuario (como root):** `sudo crontab -l -u nombre_usuario`
