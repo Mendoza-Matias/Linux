@@ -41,6 +41,41 @@
 - **Dar permiso de ejecución:** `chmod +x script.sh`
 - **Listar archivos ocultos:** `ls -la`
 ---
+### Ejemplo de grupos y permisos
+```
+[ d ][ rwx ][ r-x ][ r-- ]
+  │     │      │     │
+  │     │      │     └── Otros (usuarios que no son el dueño ni están en el grupo)
+  │     │      └──────── Grupo
+  │     └─────────────── Propietario (dueño del archivo/directorio)
+  └───────────────────── Tipo de archivo
+```
+```
+| Carácter | Significado            |
+| -------- | ---------------------- |
+| `-`      | Archivo normal         |
+| `d`      | Directorio             |
+| `l`      | Enlace simbólico       |
+| `c`      | Dispositivo (carácter) |
+| `b`      | Dispositivo (bloque)   |
+```
+```
+drwxr-xr--  2 juan proyecto 4096 oct  2 10:00 /home/juan
+d: Es un directorio
+
+rwx: El dueño (juan) puede leer, escribir y entrar
+
+r-x: El grupo (proyecto) puede leer y entrar, pero no escribir
+
+r--: Otros usuarios solo pueden leer, pero no entrar ni escribir
+```
+
+```
+r	Ver el contenido (listar archivos)
+w	Crear o borrar archivos dentro del directorio
+x	Entrar al directorio (cambiar a él)
+```
+---
 
 ### ¿Qué es un script?
 
